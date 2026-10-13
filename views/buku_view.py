@@ -1,4 +1,3 @@
-# Abdi_F5212510001
 import customtkinter as ctk
 from tkinter import ttk
 
@@ -13,9 +12,9 @@ class BukuView(ctk.CTk):
         self.grid_columnconfigure(1, weight=2)  # Kolom Kanan (Tabel lebih lebar)
         self.grid_rowconfigure(0, weight=1)
 
-        # ========================================
+        # ==========================================
         # FRAME KIRI: FORMULIR INPUT BUKU
-        # ========================================
+        # ==========================================
         self.frame_kiri = ctk.CTkFrame(self)
         self.frame_kiri.grid(
             row=0,
@@ -27,7 +26,7 @@ class BukuView(ctk.CTk):
 
         ctk.CTkLabel(
             self.frame_kiri,
-            text="Form Input Buku",
+            text="Form Data Buku",
             font=("Arial", 16, "bold")
         ).pack(pady=15)
 
@@ -58,9 +57,23 @@ class BukuView(ctk.CTk):
         )
         self.btn_simpan.pack(pady=10, padx=15, fill="x")
 
-        # ========================================
+        self.btn_update = ctk.CTkButton(
+            self.frame_kiri,
+            text="Perbarui Data (Update)",
+            fg_color="blue"
+        )
+        self.btn_update.pack(pady=10, padx=15, fill="x")
+
+        self.btn_hapus = ctk.CTkButton(
+            self.frame_kiri,
+            text="Hapus Data (Delete)",
+            fg_color="red"
+        )
+        self.btn_hapus.pack(pady=10, padx=15, fill="x")
+
+        # ==========================================
         # FRAME KANAN: TABEL DAFTAR BUKU
-        # ========================================
+        # ==========================================
         self.frame_kanan = ctk.CTkFrame(self)
         self.frame_kanan.grid(
             row=0,
