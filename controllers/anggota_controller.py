@@ -87,7 +87,6 @@ class AnggotaController:
         if not nama or not alamat:
             messagebox.showwarning("Peringatan", "Semua kolom form harus diisi!")
             return
-
         berhasil = self.model.update_anggota(self.id_terpilih, nama, alamat)
         if berhasil:
             messagebox.showinfo("Sukses", "Data anggota berhasil diperbarui!")
