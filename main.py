@@ -6,8 +6,14 @@
 #     app.run()
 
 
-from controllers.anggota_controller import AnggotaController
+# from controllers.anggota_controller import AnggotaController
+
+# if __name__ == "__main__":
+#     app = AnggotaController()
+#     app.run()
+
+from controllers.auth_controller import AuthController
 
 if __name__ == "__main__":
-    app = AnggotaController()
+    app = AuthController()
     app.run()
