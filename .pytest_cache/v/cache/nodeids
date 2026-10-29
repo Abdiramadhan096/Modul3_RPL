@@ -1,0 +1,6 @@
+[
+  "tests/test_auth.py::test_autentikasi_pengguna_berhasil",
+  "tests/test_auth.py::test_hash_password_konsisten",
+  "tests/test_buku.py::test_create_buku_berhasil",
+  "tests/test_buku.py::test_get_all_buku_berhasil"
+]

@@ -7,7 +7,7 @@ class BukuView(ctk.CTk):
         super().__init__()
 
         self.title("Sistem Manajemen Perpustakaan")
-        self.geometry("800x450")
+        self.geometry("800x520")
 
         # Konfigurasi Grid Utama (1 Baris, 2 Kolom)
         self.grid_columnconfigure(0, weight=1)  # Kolom Kiri (Form)
@@ -72,6 +72,16 @@ class BukuView(ctk.CTk):
             fg_color="red"
         )
         self.btn_hapus.pack(pady=10, padx=15, fill="x")
+
+        self.btn_hapus.pack(pady=10, padx=15, fill="x")
+
+        # Tombol Logout
+        self.btn_logout = ctk.CTkButton(
+            self.frame_kiri,
+            text="Logout",
+            fg_color="gray"
+        )
+        self.btn_logout.pack(pady=(20, 10), padx=15, fill="x")
 
         # ==========================================
         # FRAME KANAN: TABEL DAFTAR BUKU
